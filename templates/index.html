@@ -13,15 +13,32 @@
   <body>
 
     <div class="container">
-    <h1> Обзор статей</h1>
+    <ul class="nav nav-pills">
+  <li class="nav-item">
+      {% url 'article_list' as url_article_list %}
+
+    <a class="nav-link {% if url_article_list == request.path %}active{% endif %}" href="{{ url_article_list }}">Главная</a>
+  </li>
+  <li class="nav-item">
+      {% url 'edit_page' as url_edit_page %}
+    <a class="nav-link {% if url_edit_page == request.path %}active{% endif %}" href="{{ url_edit_page }}">Создание/ред/удаление</a>
+  </li>
+
+</ul>
+    {% block content %}
+    <h1 class="mt-4"> Обзор статей</h1>
          {% for i in object_list %}
             <ul>
                 <li><h3>{{ i.title }}</h3></li>
-                <li class="list-group-item">{{ i.text }}</li>
+                <li class="list-group-item">
+                    {{ i.text }}<br>
+                    <a href="detail/{{ i.id }}">перейти к статье</a>
+                </li>
                 <li><b>{{ i.create_date }}</b></li>
             </ul>
         {% endfor %}
     </div>
+    {% endblock content %}
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
