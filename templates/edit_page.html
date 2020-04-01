@@ -3,7 +3,7 @@
 {% block content %}
 
 
-    <a class="mt-4" href="/">вернуться назад</a>
+    <a class="mt-5" href="/">вернуться назад</a>
     <h1 class="mt-4">Админ панель</h1>
 
 
@@ -14,6 +14,14 @@
 
     {% if success %}
         <p style="color:green">Запись добавлена</p>
+    {% endif %}
+
+    {% if messages %}
+        <div class="alert alert-success">
+            {% for m in messages %}
+                {{ m }}
+            {% endfor %}
+        </div>
     {% endif %}
 
     {% if update %}
@@ -45,12 +53,22 @@
   </thead>
   <tbody>
   {% for i in list_articles %}
-    <tr>
+    <tr{% if i.id|slugify == request.GET.id %} style="background:#F6A81A" {% endif %}>
       <th scope="row">{{ i.id }}</th>
       <td>{{ i.title }}</td>
       <td>{{ i.text }}</td>
       <td><a href="{% url 'update_page' i.id %}">редактировать</a></td>
-      <td><a href="{% url 'delete_page' i.id %}">удалить</a></td>
+      <td>
+          <form id="delete_form" action="{% url 'delete_page' i.id %}" method="post">{% csrf_token %}</form>
+          <a href="javascript:void()" onclick='delete_question()'>удалить</a>
+          <script>
+              function delete_question() {
+                    if (confirm('Вы уверены?')) {
+                        document.getElementById('delete_form').submit()
+                    }
+              }
+          </script>
+      </td>
     </tr>
   {% endfor %}
   </tbody>

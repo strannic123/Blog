@@ -12,7 +12,7 @@
   </head>
   <body>
 
-    <div class="container">
+    <div class="container ">
     <ul class="nav nav-pills">
   <li class="nav-item">
       {% url 'article_list' as url_article_list %}
@@ -23,8 +23,20 @@
       {% url 'edit_page' as url_edit_page %}
     <a class="nav-link {% if url_edit_page == request.path %}active{% endif %}" href="{{ url_edit_page }}">Создание/ред/удаление</a>
   </li>
+    <li class="nav-item">
+    <a class="nav-link " href="">Авторизация</a>
+  </li>
+     <li class="nav-item">
+    <a class="nav-link " href="">Регистрация</a>
+  </li>
+    </li>
+     <li class="nav-item ">
+    <a class="nav-link btn-danger " href="">Выйти</a>
+  </li>
 
 </ul>
+
+
     {% block content %}
     <h1 class="mt-4"> Обзор статей</h1>
          {% for i in object_list %}

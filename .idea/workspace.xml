@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baafc345-bf3d-4223-bd17-24f81f98f468" name="Default Changelist" comment="">
+    <list default="true" id="baafc345-bf3d-4223-bd17-24f81f98f468" name="Default Changelist" comment="add form U D">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/article/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/article/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/article/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/edit_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/edit_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Blog" type="Python.DjangoServer" factoryName="Django server">
@@ -91,12 +93,19 @@
       <option name="presentableId" value="Default" />
       <updated>1585370637317</updated>
       <workItem from="1585370656103" duration="13054000" />
-      <workItem from="1585452405645" duration="6161000" />
+      <workItem from="1585452405645" duration="6582000" />
+      <workItem from="1585540954128" duration="149000" />
+      <workItem from="1585560752044" duration="7787000" />
+      <workItem from="1585728580167" duration="2276000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add form U D" />
+    <option name="LAST_COMMIT_MESSAGE" value="add form U D" />
   </component>
   <component name="WindowStateProjectService">
     <state x="693" y="204" width="524" height="495" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585315464719">
@@ -107,13 +116,17 @@
       <screen x="0" y="0" width="1920" height="910" />
     </state>
     <state x="561" y="48" width="788" height="806" key="CommitChangelistDialog2/0.0.1920.910@0.0.1920.910" timestamp="1585494272509" />
+    <state x="737" y="196" width="424" height="506" key="FileChooserDialogImpl" timestamp="1585541091072">
+      <screen x="0" y="0" width="1920" height="910" />
+    </state>
+    <state x="737" y="196" width="424" height="506" key="FileChooserDialogImpl/0.0.1920.910@0.0.1920.910" timestamp="1585541091072" />
     <state x="760" y="179" width="389" height="544" key="RollbackChangesDialog" timestamp="1585315092030">
       <screen x="0" y="0" width="1920" height="910" />
     </state>
     <state x="760" y="179" width="389" height="544" key="RollbackChangesDialog/0.0.1920.910@0.0.1920.910" timestamp="1585315092030" />
-    <state x="643" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1585488477433">
+    <state x="643" y="281" key="com.intellij.ide.util.TipDialog" timestamp="1585728588459">
       <screen x="0" y="0" width="1920" height="910" />
     </state>
-    <state x="643" y="281" key="com.intellij.ide.util.TipDialog/0.0.1920.910@0.0.1920.910" timestamp="1585488477433" />
+    <state x="643" y="281" key="com.intellij.ide.util.TipDialog/0.0.1920.910@0.0.1920.910" timestamp="1585728588459" />
   </component>
 </project>
